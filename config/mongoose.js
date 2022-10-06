@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 const database =
-  "mongodb+srv://aditya99:9jvV5kPAHKMFO8pF@cluster0.mcxgo6j.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://aditya99:OE8hu5Pk5aEPLS4x@cluster0.mcxgo6j.mongodb.net/?retryWrites=true&w=majority";
 
 const db = mongoose
   .connect(database)
