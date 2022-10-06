@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="./css/home.css" />
+
+<div class="home-display">
+  <%if(msg.length>0){%>
+  <div class="flash">
+    <div class="flash-msg"><%= msg%></div>
+  </div>
+  <%}%>
+  <h1>Home</h1>
+  <div class="to-sign-up">
+    <h3>
+      If you dont have a account please&nbsp
+      <a href="/sign-up">Click Here</a>&nbsp to Create One...
+    </h3>
+  </div>
+  <div class="to-sign-in">
+    <h3>
+      If you already have a account please&nbsp
+      <a href="/sign-in">Click Here</a> &nbsp to Sign in...
+    </h3>
+  </div>
+</div>

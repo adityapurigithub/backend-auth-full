@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="./css/form.css" />
+
+<form action="/signing-up" method="post">
+  <%if(alert.length>0){%>
+  <div class="flash">
+    <div class="flash-msg"><%= alert%></div>
+  </div>
+  <%}%>
+  <div class="form-body">
+    <h2>Create Your Account</h2>
+    <div class="form-label">
+      <label for="name">Name</label>
+    </div>
+    <div class="form-input">
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-label">
+      <label for="email">Email</label>
+    </div>
+    <div class="form-input">
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-label">
+      <label for="password">Password</label>
+    </div>
+    <div class="form-input">
+      <input type="password" id="password" name="password" required />
+    </div>
+    <div class="form-label">
+      <label for="confirm-password">Confirm Password</label>
+    </div>
+    <div class="form-input">
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm_password"
+        required
+      />
+    </div>
+    <div class="form-btn">
+      <a href="/sign-in">Already have an account</a>
+      <button type="submit">Create</button>
+    </div>
+    <div class="google-auth" style="text-align: center; margin-top:30px ;">
+      <a href="/auth/google" style="text-decoration: none;">Sign In/Sign Up Using Google</a>
+    </div>
+  </div>
+</form>

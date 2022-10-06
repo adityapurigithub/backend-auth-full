@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/css/profile.css" />
+
+<div class="profile-wrapper">
+  <%if(msg.length>0){%>
+  <div class="flash">
+    <div class="flash-msg"><%= msg%></div>
+  </div>
+  <%}%> <%if(alert.length>0){%>
+  <div class="flash">
+    <div class="flash-msg"><%= alert%></div>
+  </div>
+  <%}%>
+  <div class="profile">
+    <div class="sign-out">
+      <a href="/sign-out">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5665/5665417.png"
+          alt=""
+          height="30px"
+        />
+      </a>
+    </div>
+    <div class="user-pic">
+      <img src="https://cdn-icons-png.flaticon.com/512/560/560277.png" alt="" />
+    </div>
+    <div class="user-name">
+      <h3>Name: <span><%=user.name%></span></h3>
+    </div>
+    <div class="user-email">
+      <h3>Email: <span><%=user.email%></span></h3>
+    </div>
+    <!-- <div class="user-password">
+      <h3>Password: <span><%=user.password%></span></h3>
+    </div> -->
+    <br /><br />
+    <div class="reset-pass">
+      <a href="/edit-profile">
+        <span>Reset Password</span>
+      </a>
+    </div>
+  </div>
+</div>

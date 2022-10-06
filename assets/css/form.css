@@ -1,0 +1,61 @@
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-body {
+  width: 400px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 40px 0;
+  padding: 30px;
+}
+.form-body h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.form-body .form-label,
+.form-body .form-input {
+  padding: 2px;
+}
+.form-body .form-label label {
+  color: gray;
+}
+.form-body .form-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+  transition: 0.2s ease;
+  margin-bottom: 12px;
+}
+.form-body .form-input input:focus {
+  transform: scale(101%);
+  border: 1px solid rgba(89, 0, 255, 0.5);
+}
+
+.form-body .form-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.form-body .form-btn button {
+  padding: 8px 30px;
+  outline: none;
+  border: none;
+  background-color: rgba(58, 58, 255, 0.8);
+  color: white;
+  cursor: pointer;
+}
+.form-body .form-btn button:active {
+  background-color: rgba(58, 58, 255, 1);
+}

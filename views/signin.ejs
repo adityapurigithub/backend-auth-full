@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="./css/form.css" />
+
+<form action="/signing-in" method="post">
+  <%if(msg.length>0){%>
+  <div class="flash">
+    <div class="flash-msg"><%= msg%></div>
+  </div>
+  <%}%>
+  <div class="form-body">
+    <h2>Sign in</h2>
+
+    <div class="form-label">
+      <label for="email">Email</label>
+    </div>
+    <div class="form-input">
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-label">
+      <label for="password">Password</label>
+    </div>
+    <div class="form-input">
+      <input type="password" id="password" name="password" required />
+    </div>
+    <div class="form-btn">
+      <button type="submit">Sign in</button>
+      <a href="/sign-up">Create New Account</a>
+    </div>
+    <div class="google-auth" style="text-align: center; margin-top:30px ;">
+      <a href="/auth/google" style="text-decoration: none;">Sign In Using Google</a>
+    </div>
+  </div>
+</form>

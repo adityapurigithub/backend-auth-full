@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="./css/form.css" />
+
+<!-- as user is authenticated and we are setting authenticated user so we have user in locals -->
+<form action="/update-profile" method="post">
+  <div class="form-body">
+    <h2>Edit Your Profile</h2>
+    <div class="form-label">
+      <label for="name">Name</label>
+    </div>
+    <div class="form-input">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        value="<%=user.name%>"
+        disabled
+      />
+    </div>
+
+    <div class="form-label">
+      <label for="email">Email</label>
+    </div>
+    <div class="form-input">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="<%=user.email%>"
+        disabled
+      />
+    </div>
+
+    <div class="form-label">
+      <label for="password">New Password</label>
+    </div>
+    <div class="form-input">
+      <input type="text" id="password" name="password" required />
+    </div>
+    <div class="form-btn">
+      <a href="/profile">Go back</a>
+      <button type="submit">Update</button>
+    </div>
+  </div>
+</form>

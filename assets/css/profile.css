@@ -1,0 +1,62 @@
+.profile-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+.profile-wrapper .profile {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+.profile .sign-out {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  top: -20px;
+}
+.profile .user-pic {
+  width: 120px;
+  height: 130px;
+  margin-bottom: 40px;
+}
+.profile .user-pic img {
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease;
+}
+.profile .user-pic img:hover {
+  transform: scale(102%);
+}
+
+.profile .user-name,
+.profile .user-password,
+.profile .user-email {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.profile .user-name h3,
+.profile .user-password h3,
+.profile .user-email h3 {
+  width: 100%;
+  color: gray;
+}
+
+.profile .user-name h3 span,
+.profile .user-password h3 span,
+.profile .user-email h3 span {
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
