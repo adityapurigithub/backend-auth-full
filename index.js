@@ -54,7 +54,7 @@ app.use(
     },
 
     //using mongo store to store the session cookie
-    store: MongoStore.create({ mongoUrl: "mongodb://localhost:27017/auth" }),
+    store: MongoStore.create({ mongoUrl: "mongodb+srv://aditya99:OE8hu5Pk5aEPLS4x@cluster0.mcxgo6j.mongodb.net/?retryWrites=true&w=majority" }),
   })
 );
 
