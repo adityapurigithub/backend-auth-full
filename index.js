@@ -3,6 +3,7 @@ const port = process.env.PORT || 8000;
 //calling express..
 const app = express();
 
+const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
 
 const cookieParser = require("cookie-parser");
@@ -14,7 +15,7 @@ const session = require("express-session");
 const passport = require("passport");
 const passportLocal = require("./config/passport-local-strategy");
 
-const passportGoogle = require('./config/passport-google-oauth2-strategy');
+const passportGoogle = require("./config/passport-google-oauth2-strategy");
 
 //connect-mongo for storing session data in db..
 //connect mongo require the express session
@@ -25,7 +26,7 @@ const flash = require("connect-flash");
 
 //seting view engine...
 app.set("view engine", "ejs");
-app.set("views", "./views");
+app.set("views", path.join("views"));
 
 //for parsing incoming req..
 app.use(express.urlencoded());
